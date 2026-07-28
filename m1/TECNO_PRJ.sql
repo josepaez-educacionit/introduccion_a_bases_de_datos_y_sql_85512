@@ -1,3 +1,14 @@
+-- Crear la base de datos principal
+create database Tecno_PRJ;
+/*
+  Si necesitas eliminar la base de datos para reiniciar el entorno, descomenta la siguiente línea:
+  drop database Tecno_PRJ;
+*/
+
+-- Seleccionar la base de datos para trabajar
+use Tecno_PRJ;
+
+-- Crear la tabla 
 CREATE TABLE IF NOT EXISTS `FACTURAS` (
 	`FacturaID` int AUTO_INCREMENT NOT NULL UNIQUE,
 	`Letra` char(1) NOT NULL,
@@ -7,6 +18,8 @@ CREATE TABLE IF NOT EXISTS `FACTURAS` (
 	`Monto` double NOT NULL,
 	PRIMARY KEY (`FacturaID`)
 );
+
+-- Crear la tabla 
 CREATE TABLE IF NOT EXISTS `ARTICULOS` (
 	`ArticuloID` int AUTO_INCREMENT NOT NULL UNIQUE,
 	`Nombre` varchar(50) NOT NULL,
@@ -14,6 +27,8 @@ CREATE TABLE IF NOT EXISTS `ARTICULOS` (
 	`Stock` int NOT NULL,
 	PRIMARY KEY (`ArticuloID`)
 );
+
+-- Crear la tabla 
 CREATE TABLE IF NOT EXISTS `CLIENTES` (
 	`ClienteID` int AUTO_INCREMENT NOT NULL UNIQUE,
 	`Nombre` varchar(25) NOT NULL,
@@ -23,6 +38,8 @@ CREATE TABLE IF NOT EXISTS `CLIENTES` (
 	`Comentarios` int,
 	PRIMARY KEY (`ClienteID`)
 );
+
+-- Crear la tabla 
 CREATE TABLE IF NOT EXISTS `DETALLE` (
 	`DetalleID` int AUTO_INCREMENT NOT NULL UNIQUE,
 	`ArticuloID` int NOT NULL,
@@ -30,6 +47,7 @@ CREATE TABLE IF NOT EXISTS `DETALLE` (
 	`Cantidad` int NOT NULL,
 	PRIMARY KEY (`DetalleID`)
 );
+
 ALTER TABLE `FACTURAS` ADD CONSTRAINT `FACTURAS_fk3` FOREIGN KEY (`ClienteID`) REFERENCES `CLIENTES`(`ClienteID`);
 ALTER TABLE `DETALLE` ADD CONSTRAINT `DETALLE_fk1` FOREIGN KEY (`ArticuloID`) REFERENCES `ARTICULOS`(`ArticuloID`);
 ALTER TABLE `DETALLE` ADD CONSTRAINT `DETALLE_fk2` FOREIGN KEY (`FacturaID`) REFERENCES `FACTURAS`(`FacturaID`);
