@@ -1,0 +1,35 @@
+use ComercioIT;
+
+-- Insertar registros de ejemplo en la tabla Articulos
+
+INSERT INTO Articulos (Nombre, Precio) VALUES
+('Apple iPhone 17', 999.00),
+('Apple iPhone 17 Pro', 1199.00),
+('Samsung Galaxy S26', 899.00),
+('Samsung Galaxy S26 Ultra', 1299.00),
+('Google Pixel 11', 899.00),
+('Google Pixel 11 Pro', 1099.00),
+('Apple MacBook Air 15 M5', 1499.00),
+('Apple MacBook Pro 14 M5 Pro', 2199.00),
+('Dell XPS 13 (2026)', 1399.00),
+('Lenovo ThinkPad X1 Carbon Gen 14', 1899.00),
+('ASUS ROG Zephyrus G16 (2026)', 2399.00),
+('HP Spectre x360 14 (2026)', 1699.00),
+('Apple iPad Pro 11 M5', 999.00),
+('Samsung Galaxy Tab S11 Ultra', 1199.00),
+('Apple Watch Series 12', 499.00),
+('Samsung Galaxy Watch 9', 399.00),
+('Google Pixel Watch 4', 399.00),
+('Sony WH-1000XM7', 449.00),
+('Apple AirPods Pro 3', 279.00),
+('Samsung Galaxy Buds 4 Pro', 249.00),
+('Sony PlayStation 5 Pro', 699.00),
+('Nintendo Switch 2', 449.00),
+('Xbox Series X Digital', 499.00),
+('Meta Quest 4', 599.00),
+('DJI Mini 6 Pro', 999.00),
+('GoPro HERO15 Black', 499.00),
+('Garmin Fenix 9', 899.00),
+('Logitech MX Master 4', 129.00),
+('Samsung Odyssey OLED G8 (2026)', 999.00),
+('LG UltraGear OLED 32GX990A', 1399.00);
