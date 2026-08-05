@@ -1,12 +1,5 @@
--- Crear la base de datos principal
-create database Tecno_PRJ;
-/*
-  Si necesitas eliminar la base de datos para reiniciar el entorno, descomenta la siguiente línea:
-  drop database Tecno_PRJ;
-*/
-
 -- Seleccionar la base de datos para trabajar
-use Tecno_PRJ;
+use Tecno_DB;
 
 -- Crear la tabla 
 CREATE TABLE IF NOT EXISTS `FACTURAS` (
