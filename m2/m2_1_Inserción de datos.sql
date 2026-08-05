@@ -111,3 +111,5 @@ INSERT INTO OtrosArticulos (nombre, categoria, precio, stock, disponible) VALUES
 ('Auriculares Bluetooth', 'Electrónica', 65.99, 3, TRUE),
 ('Maceta Cerámica Grande', 'Hogar', 27.50, 18, TRUE),
 ('Protector Pantalla Vidrio Templado', 'Accesorios', 9.99, 50, TRUE);
+
+select * from OtrosArticulos;
