@@ -11,6 +11,7 @@ CREATE TABLE LOCALIDADES (
 show DATABASES;
 
 #6 Mostrar todas tablas de la BBDD Laboratorio
+use LABORATORIO;
 show tables;
 
 #7 Comentar instruccion que muestra todas tablas de la BBDD Laboratorio
